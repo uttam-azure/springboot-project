@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DiscoveryServiceApplication",
+            "request": "launch",
+            "mainClass": "com.programmingtechie.discovery_service.DiscoveryServiceApplication",
+            "projectName": "discovery-service"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "com.programmingtechie.discovery_service.Main",
+            "projectName": "discovery-service"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "com.programmingtechie.Main",
+            "projectName": "discovery-service"
+        },
+        {
+            "type": "java",
+            "name": "DiscoveryServerApplication",
+            "request": "launch",
+            "mainClass": "DiscoveryServerApplication",
+            "projectName": "discovery-server"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-Main<order-service>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -18,7 +46,8 @@
             "mainClass": "com.programmingtechie.order_service.OrderServiceApplication",
             "projectName": "order-service",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=59609 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=order-service"
         },
         {
             "type": "java",
@@ -38,7 +67,8 @@
             "mainClass": "com.programmingtechie.inventory_service.InventoryServiceApplication",
             "projectName": "inventory-service",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=59589 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=inventory-service"
         }
     ]
 }

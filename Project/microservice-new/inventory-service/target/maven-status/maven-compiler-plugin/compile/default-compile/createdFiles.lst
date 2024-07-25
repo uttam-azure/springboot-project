@@ -1,5 +1,7 @@
-com\programmingtechie\inventory_service\controller\InventoryController.class
+com\programmingtechie\inventory_service\dto\InventoryResponse.class
 com\programmingtechie\inventory_service\service\InventoryService.class
 com\programmingtechie\inventory_service\model\Inventory.class
-com\programmingtechie\inventory_service\repository\InventoryRepository.class
 com\programmingtechie\inventory_service\InventoryServiceApplication.class
+com\programmingtechie\inventory_service\controller\InventoryController.class
+com\programmingtechie\inventory_service\dto\InventoryResponse$InventoryResponseBuilder.class
+com\programmingtechie\inventory_service\repository\InventoryRepository.class
